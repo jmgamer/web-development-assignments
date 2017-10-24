@@ -2,9 +2,14 @@
 <html>
 <head>
     <title>Bistro Americana Home Page</title>
+    <link href="restaurantStyles.css" rel="stylesheet" type="text/css"/>
+    <style>
+    #spacer {height: 10px;}
+    #inputLabel {text-align: right; vertical-align: top;}
+    </style>
 </head>
 <body>
-    <h1 style="text-align: center">Bistro Americana</h1>
+    <h1 class="header">Bistro Americana</h1>
     <hr/>
         <table width=25%>
             <tbody>
@@ -20,31 +25,31 @@
         <table>
             <tbody>
                 <tr>
-                    <td style="text-align: right"><label id="NameLabel" for "Name">Name: </label></td>
+                    <td id="inputLabel"><label id="NameLabel" for "Name">Name: </label></td>
                     <td><input id="Name" name="Name" type="text" size="27"/></td>
                 </tr>
                 <tr>
-                    <td style="height: 10px"></td>
+                    <td id="spacer"></td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td style="text-align: right"><label id="EmailLabel" for "EmailAddress"></label>Email: </label></td>
+                    <td id="inputLabel"><label id="EmailLabel" for "EmailAddress"></label>Email: </label></td>
                     <td><input id="EmailAddress" name="EmailAddress" type="text" size="27"/></td>
                 </tr>
                 <tr>
-                    <td style="height: 10px"></td>
+                    <td id="spacer"></td>
                     <td></td>  
                 </tr>
                 <tr>
-                    <td style="text-align: right"><label id="Phone" for "Phone"></label>Phone: </label></td>
+                    <td id="inputLabel"><label id="Phone" for "Phone"></label>Phone: </label></td>
                     <td><input id="Phone" name="Phone" type="text" size="27"/></td>
                 </tr>
                 <tr>
-                    <td style="height: 10px"></td>
+                    <td id="spacer"></td>
                     <td></td>  
                 </tr> 
                 <tr>
-                    <td style="text-align: right"><label id="Reason" for "Reason"></label>Reason for Inquiry: </label></td>
+                    <td id="inputLabel"><label id="Reason" for "Reason"></label>Reason for Inquiry: </label></td>
                     <td><select id="Reason" name="Reason" style="width: 200px">
                         <option value="Catering">Catering</option>
                         <option value="Party">Private Party</option>
@@ -54,27 +59,27 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="height: 10px"></td>
+                    <td id="spacer"></td>
                     <td></td>  
                 </tr>
                 <tr>
-                    <td style="text-align: right" valign="top"><label id="AdditionalInfoLabel" for "AdditionalInfo">Additional Information: </label></td>
+                    <td id="inputLabel"><label id="AdditionalInfoLabel" for "AdditionalInfo">Additional Information: </label></td>
                     <td><textarea id="AdditionalInfo" name="AdditionalInfo" rows="5" columns="22"></textarea></td>
                 </tr>
                 <tr>
-                    <td style="height: 10px"></td>
+                    <td id="spacer"></td>
                     <td></td>  
                 </tr>      
                 <tr>
-                    <td style="text-align: right"><label id="PriorVisit" for "PriorVisit"></label>Have you been to the restaurant?  </label></td>
+                    <td id="inputLabel"><label id="PriorVisit" for "PriorVisit"></label>Have you been to the restaurant?  </label></td>
                     <td><input id="PriorVisit" name="PriorVisit" type="radio" value="No" checked/>No<input id="PriorVisit" name="PriorVisit" type="radio" value="Yes"/>Yes</td>
                 </tr>
                 <tr>
-                    <td style="height: 10px"></td>
+                    <td id="spacer"></td>
                     <td></td>  
                 </tr>
                 <tr>
-                    <td style="text-align: right"><label id="ContactDays" for "ContactDays"></label>Best days to contact you: </label></td>
+                    <td id="inputLabel"><label id="ContactDays" for "ContactDays"></label>Best days to contact you: </label></td>
                     <td>
                         <input id="ContactDays" name="ContactDays" type="checkbox" value="Monday"/>M
                         <input id="ContactDays" name="ContactDays" type="checkbox" value="Tuesday"/>T
@@ -84,24 +89,24 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="height: 10px"></td>
+                    <td id="spacer"></td>
                     <td></td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td style="text-align: center" ><input type="submit" value="Send Request"/></td>
+                    <td id="inputLabel"><input type="submit" value="Send Request"/></td>
                 </tr>
                 <tr>
-                    <td style="height: 10px"></td>
+                    <td id="spacer"></td>
                     <td></td>
                 </tr>
             </tbody>
         </table>
     </form>
-    <div>
+    <div class="footer">
         <hr/>
-        <p style="text-align: center">101 Main Street, Anytown, IL  62999</p>
-        <p style="text-align: center">(555) 123-4567</p>
+        <p>101 Main Street, Anytown, IL  62999</p>
+        <p>(555) 123-4567</p>
         <hr/>
     </div>
 </body>
