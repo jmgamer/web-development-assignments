@@ -3,9 +3,11 @@
 <head>
     <title>Bistro Americana Home Page</title>
     <link href="restaurantStyles.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
     <style>
     #spacer {height: 10px;}
     #inputLabel {text-align: right; vertical-align: top;}
+    .required {font-weight: bold}
     </style>
 </head>
 <body>
@@ -25,7 +27,7 @@
         <table>
             <tbody>
                 <tr>
-                    <td id="inputLabel"><label id="NameLabel" for "Name">Name: </label></td>
+                    <td id="inputLabel" class="required"><label id="NameLabel" for "Name">Name: </label></td>
                     <td><input id="Name" name="Name" type="text" size="27"/></td>
                 </tr>
                 <tr>
@@ -33,7 +35,7 @@
                     <td></td>
                 </tr>
                 <tr>
-                    <td id="inputLabel"><label id="EmailLabel" for "EmailAddress"></label>Email: </label></td>
+                    <td id="inputLabel" class="required"><label id="EmailLabel" for "EmailAddress"></label>Email: </label></td>
                     <td><input id="EmailAddress" name="EmailAddress" type="text" size="27"/></td>
                 </tr>
                 <tr>
@@ -41,7 +43,7 @@
                     <td></td>  
                 </tr>
                 <tr>
-                    <td id="inputLabel"><label id="Phone" for "Phone"></label>Phone: </label></td>
+                    <td id="inputLabel" class="required"><label id="Phone" for "Phone"></label>Phone: </label></td>
                     <td><input id="Phone" name="Phone" type="text" size="27"/></td>
                 </tr>
                 <tr>
