@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
     <title>Bistro Americana Home Page</title>
     <link href="restaurantStyles.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
-<style>
-    .background {
+<style type="text/css">
+    .container {
         background-color: lavender
     }
                 a           {
@@ -25,30 +30,49 @@
                 }  
                 a:active     {
                     text-decoration: none;
-                }   
+                }
+    hr {
+        height: 2px; 
+        background-color:#555; 
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        } 
+    .jumbotron    {
+    font-family: 'Lobster', serif;
+    font-size: 20px;
+    text-align: center;
+}
 </style>
 <body>
     <h1 class="header">Bistro Americana</h1>
     <hr/>
-        <table width=20%>
-            <tbody>
-                <tr>
-                    <td><a href="index.html">Home</a></td> 
-                    <td><a href="Menu.html">Menu</a></td> 
-                    <td><a href="ContactUs.html">Contact Us</a></td>
-                </tr>
-            </tbody>
-        </table>  
+        <ul class="nav nav-pills">
+            <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li> 
+            <li><a href="Menu.html">Menu</a></li> 
+            <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
     <hr/>
-    <div class="background">
-    <table width=400px align="center">
-        <tr>
-            <td><img src="menu-restaurant-vintage-table.jpg" alt="Picture of Bistro Americana" style="width: 400px;height: 150px;border:1px; border-style:solid; padding:1em"/></td>
-        </tr>
-        <tr>
-            <td><p style="border:1px; border-style:solid; padding:1em">Bistro Americana is located in historic Anytown.  The restaurant was recently featured on "Diners, Drive-Ins and Dives" with Guy Fieri on Food Network.  We serve classic American fare in a relaxed and friendly atmosphere.  Sure to please the entire family.<p></td>
-        </tr>
-    </table>
+    <p class="jumbotron">Coming soon!  Bistro Americana 2 at Southpark Mall</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-6">
+                    <img class="img-responsive" src="menu-restaurant-vintage-table.jpg" alt="Picture of Bistro Americana" style="border:1px; border-style:solid; padding:1em;"/>
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-6">
+                <p style="border:1px; border-style:solid; padding:1em";>Bistro Americana is located in historic Anytown.  The restaurant was recently featured on "Diners, Drive-Ins and Dives" with Guy Fieri on Food Network.  We serve classic American fare in a relaxed and friendly atmosphere.  Sure to please the entire family.<p>
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
     </div>
     <div class="footer">
         <hr/>

@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
     <title>Bistro Americana Home Page</title>
     <link href="restaurantStyles.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <style>
-        .menuDetails {text-align: center;}
-        th   {
-            font-size: x-large
+        .container-fluid {
+            background-color: lavender;
         }
-        #menu {
-            background-color: lavender
-        }
-        a           {
+        a                   {
                     text-decoration: underline;  
                 }
                 a:link       {
@@ -28,136 +29,120 @@
                 }  
                 a:active     {
                     text-decoration: none;
-                }          
+                } 
+        hr {
+            height: 2px; 
+            background-color:#555; 
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 100%;
+        } 
+        .jumbotron    {
+            font-family: 'Lobster', serif;
+            font-size: 20px;
+            text-align: center;
+        }       
     </style>
 </head>
 <body>
     <h1 class="header">Bistro Americana</h1>
     <hr/>
-        <table width=20%>
-            <tbody>
-                <tr>
-                    <td><a href="index.html">Home</a></td> 
-                    <td><a href="Menu.html">Menu</a></td> 
-                    <td><a href="ContactUs.html">Contact Us</a></td>
-                </tr>
-            </tbody>
-        </table>  
+        <ul class="nav nav-pills">
+            <li><a href="index.html"><span class="glyphicon glyphicon-home"></a></li> 
+            <li class="active"><a href="Menu.html">Menu</a></li> 
+            <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul> 
     <hr/>
-    <table id="menu" width=100% class="menuDetails"">
-        <thead>
-            <tr>
-                <th>Burger and Fries</th>
-                <th>Hot Dog and Chips</th>
-                <th>Italian Sausage and Peppers</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
+    <p class="jumbotron">Coming soon!  Bistro Americana 2 at Southpark Mall</p>
+    <div class="container-fluid">
+        <div class="row">
+        <div class="col-sm-4">
+            <p style="font-size:20px; text-align:center; font-weight:bold;">Burger and Fries</p>
+            <p style="text-align:center;">
                     An American Classic!<br/>
                     Your choice - with or without cheese<br/>
                     Pickle, onion, tomato, and lettuce<br>
                     Served with our famous thick cut<br/>
                     french fries<br/>
-                    $7.95
-                </td>
-                <td>
-                        A Summer Classic!<br/>
-                        Your choice - white or wheat bun<br/>
-                        Relish, mustard, and ketchup<br>
-                        Served with our house-made chips<br/>
-                        $7.95
-                    </td>
-                <td>
-                        An All-Time Favorite!!<br/>
-                        Your choice - mild or spicy<br/>
-                        Cole Slaw<br>
-                        Served with garlic mashers<br/>
-                        $10.95
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-        </tbody>
-        <thead>
-            <tr>
-                <th>Tenderloin Sandwich and Chips</th>
-                <th>House Salad</th>
-                <th>Brisket Sandwich and Fries</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
+                    $7.95</p>
+        </div>
+        <div class="col-sm-4">
+            <p style="font-size:20px; text-align:center; font-weight:bold;">Hot Dog and Chips</p>
+            <p style="text-align:center;">
+                    A Summer Classic!<br/>
+                    Your choice - white or wheat bun<br/>
+                    Relish, mustard, and ketchup<br>
+                    Served with our house-made chips<br/>
+                    $7.95</p> 
+        </div>
+        <div class="col-sm-4">
+            <p style="font-size:20px; text-align:center; font-weight:bold;">Italian Sausage and Peppers</p>
+            <p style="text-align:center">
+                    An All-Time Favorite!!<br/>
+                    Your choice - mild or spicy<br/>
+                    Cole Slaw<br>
+                    Served with garlic mashers<br/>
+                    $10.95</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <p style="font-size:20px; text-align:center; font-weight:bold;">Tenderloin Sandwich and Chips</p>
+            <p style="text-align:center;">
                     Really Hits the Spot!<br/>
                     Plain or Sesame Seed Bun<br/>
                     Pickle, onion, tomato, and lettuce<br>
                     Served with our house-made chips<br/>
                     $8.95
-                </td>
-                <td>
-                        On the Lighter Side<br/>
-                        Your choice - with or without cheese<br/>
-                        Iceberg lettuce, tomatoes, peppers<br>
-                        Thousand Island or Ranch Dressing<br/>
-                        Served with a dinner roll<br/>
-                        $6.95
-                    </td>
-                <td>
-                        A Taste of Texas!!<br/>
-                        Smoked Brisket on thick-cut Texas<br/>
-                        Toast<br>
-                        Cole Slaw<br/>
-                        Served with our famous thick-cut<br/>
-                        french fries<br/>
-                        $7.95
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </tbody>
-        <thead>
-            <tr>
-                <th></th>
-                <th>Beverages</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td></td>
-                <td>
+            </p>
+        </div>
+        <div class="col-sm-4">
+            <p style="font-size:20px; text-align:center; font-weight:bold;">House Salad</p>
+            <p style="text-align:center;">
+                    On the Lighter Side<br/>
+                    Your choice - with or without cheese<br/>
+                    Iceberg lettuce, tomatoes, peppers<br>
+                    Thousand Island or Ranch Dressing<br/>
+                    Served with a dinner roll<br/>
+                    $6.95
+            </p>
+        </div>
+        <div class="col-sm-4">
+            <p style="font-size:20px; text-align:center; font-weight:bold;">Brisket Sandwich and Fries</p>
+            <p style="text-align:center">
+                    A Taste of Texas!!<br/>
+                    Smoked Brisket on thick-cut Texas<br/>
+                    Toast<br>
+                    Cole Slaw<br/>
+                    Served with our famous thick-cut<br/>
+                    french fries<br/>
+                    $7.95
+                </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <p style="font-size:20px; text-align:center; font-weight:bold;"></p>
+        </div>
+        <div class="col-sm-4">
+            <p style="font-size:20px; text-align:center; font-weight:bold;">Beverages</p>
+            <p style="text-align:center;">
                     Root Beer       $3.00<br/>
                     Bottled Water   $1.25<br/>
                     Lemonade        $1.00<br/>
                     Iced Tea        $1.25<br/>
-                </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td><br/><br/><br/></td>
-                <td><br/><br/><br/></td>
-                <td><br/><br/><br/></td>
-            </tr>
-        </tbody>
-    </table>
-    <div class="footer">
-        <hr/>
-        <p>101 Main Street, Anytown, IL  62999</p>
-        <p>(555) 123-4567</p>
-        <hr/>
+            </p>
+        </div>
+        <div class="col-sm-4">
+            <p style="font-size:20px; text-align:center; font-weight:bold;"></p>
+        </div>
     </div>
+</div>
+<div class="footer">
+    <hr/>
+    <p>101 Main Street, Anytown, IL  62999</p>
+    <p>(555) 123-4567</p>
+    <hr/>
+</div>
 </body>
 </html>

@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bistro Americana Home Page</title>
     <link href="restaurantStyles.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <style>
     #spacer {height: 10px;}
     #inputLabel {text-align: right; vertical-align: top;}
@@ -24,22 +29,31 @@
                 }  
                 a:active     {
                     text-decoration: none;
-                }   
+                }
+    hr {
+        height: 2px; 
+        background-color:#555; 
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        }   
+        .jumbotron    {
+            font-family: 'Lobster', serif;
+            font-size: 20px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <h1 class="header">Bistro Americana</h1>
     <hr/>
-        <table width=25%>
-            <tbody>
-                <tr>
-                    <td><a href="index.html">Home</a></td> 
-                    <td><a href="Menu.html">Menu</a></td> 
-                    <td><a href="ContactUs.html">Contact Us</a></td>
-                </tr>
-            </tbody>
-        </table>  
+        <ul class="nav nav-pills">
+            <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li> 
+            <li><a href="Menu.html">Menu</a></li> 
+            <li class="active"><a href="ContactUs.html">Contact Us</a></li>
+        </ul> 
     <hr/>
+    <p class="jumbotron">Coming soon!  Bistro Americana 2 at Southpark Mall</p>
     <form action="#" method="post">
         <table>
             <tbody>
