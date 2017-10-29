@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">  
     <title>Bistro Americana Home Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link href="restaurantStyles.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-</head>
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    </head>
 <style type="text/css">
     .container {
         background-color: lavender
@@ -45,6 +50,15 @@
 }
 </style>
 <body>
+    <noscript>
+        <div class="alert alert-warning alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert"
+                aria-hidden="true">
+                &times;
+            </button>
+                <p style="text-align:center; color:red;">Warning! JavaScript is disabled.  This site is best viewed with JavaScript enabled.</p>
+            </div>
+    </noscript>
     <h1 class="header">Bistro Americana</h1>
     <hr/>
         <ul class="nav nav-pills">
@@ -53,7 +67,31 @@
             <li><a href="ContactUs.html">Contact Us</a></li>
         </ul>
     <hr/>
-    <p class="jumbotron">Coming soon!  Bistro Americana 2 at Southpark Mall</p>
+    <!--<p class="jumbotron">Coming soon!  Bistro Americana 2 at Southpark Mall</p>-->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#MyCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#MyCarousel" data-slide-to="1"></li>
+            <li data-target="#MyCarousel" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="item active">
+                <h3 style="text-align:center">Coming Soon! Bistro Americana 2 at Southpark Mall.</h3>
+            </div>
+            <div class="item">
+                <h3 style="text-align:center">Check out our seasonal menu with special options for fall/winter.</h3>
+            </div> 
+            <div class="item">
+                <h3 style="text-align:center">The Drink of the Month is SG Special Brew.</h3>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
